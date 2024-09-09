@@ -4,87 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/icons8-r-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Rofiyat</title>
 </head>
 <body>
     <h1>Rofiyat's Membership Form</h1>
     <form>
-        <label for="name">Name</label>
-        <br/>
-        <input placeholder="First" type="text" name="First Name" id="">
-        <input placeholder="Last" type="text" name="Last Name" id="">
-        <br/>
-        <label for="address">Address</label>
-        <br/>
-        <input placeholder="Street Address" type="text" name="Street Address" id="">
-        <br />
-        <input placeholder="Street Address Line 2" type="text" name="Street Address Line 2" id="">
-        <br/>
-        <input placeholder="City" type="text" name="City" id="">
-        <input placeholder="Region" type="text" name="Region" id="">
-        <br />
-        <input placeholder="Postal / Zip Code" type="text" name="Postal / Zip code" id="">
-        <select name="countries" id="">
-            <option value="1">Roman</option>
-            <option value="2">Argentina</option>
-            <option value="3">Nigeria</option>
-            <option value="4">India</option>
-            <option value="5">Ghana</option>
-        </select>
-        <br/>
-        <label for="email">Email</label>
-        <label for="phone">Phone</label>
-        <br/>
-        <input type="email" name="" id="">
-        <input placeholder="### ### ####" type="number" name="" id="">
-        <br/>
-        <label for="date of birth">Date of Birth</label>
-        <br/>
-        <input type="date" name="date of birth" id="">
-        <br/>
-        <label for="Occupation or Profession">Occupation or profession</label>
-        <br/>
-        <input type="text" name="" id="">
-        <br/>
-        <label for="voice part">Voice part</label>
-        <br/>
-        <input type="radio" name="" id="">Suprano
-        <input type="radio" name="" id="">Tenor
-        <br>
-        <input type="radio" name="" id="">Alto
-        <input type="radio" name="" id="">Bass
-        <br/>
-        <label for="">Chairs you sing with currently or have sung with previously</label>
-        <br/>
-        <textarea name="" id="" cols="40" rows="2"></textarea>
-        <br/>
-        <label for="">Other musical experience and qualifications including any instruments played and grade</label>
-        <br/>
-        <textarea name="" id="" cols="30" rows="5"></textarea>
-        <br/>
-        <label for="">What made you decide to apply?</label>
-        <br/>
-        <input type="checkbox" name="" id=""> Attended a concert
-        <input type="checkbox" name="" id=""> Twitter
-        <br/>
-        <input type="checkbox" name="" id=""> Attended a Come and Sing day
-        <input type="checkbox" name="" id=""> Other online advertising
-        <br />
-        <input type="checkbox" name="" id=""> Attended an open rehearsal
-        <input type="checkbox" name="" id=""> Leaflet/poster/flyer
-        <br />
-        <input type="checkbox" name="" id=""> Email from Craydon Bach Choir
-        <input type="checkbox" name="" id=""> Friend/relative/colleague is a member
-        <br />
-        <input type="checkbox" name="" id=""> Website
-        <input type="checkbox" name="" id=""> Music teacher's
-        <br/>
-        
-        
+        <div class="section1">
+            <label for="name">Name</label>
+            <br />
+            <div> 
+                
+                <input placeholder="First" type="text">
+            </div>
+            <div>
+                <input placeholder="Last" type="text">
+            </div>
+        </div>  
 
-        
+        <div class="section2">
+            <label for="address">Address</label>
+            <br/>
+            <input placeholder="Street Address" type="text">
+            <input placeholder="Street Address Line 2" type="text">
+        </div>
+        <div class="section3">
+            <div class="left">
+                <input placeholder="City" type="text">
+                <input placeholder="Postal / Zip Code" type="text">
+            </div>
+            <div class="right">
+                <input placeholder="Region" type="text">
+                <select name="Country" id="">
+                    <option selected="1">
+                        Romania
+                    </option>
+                    <option>
+                        Nigeria
+                    </option>
+                        
+                </select>
+            </div>
+        </div>
+ 
     </form>
-    <input type="reset" value="RESET">
+    
 
 </body>
 </html>
